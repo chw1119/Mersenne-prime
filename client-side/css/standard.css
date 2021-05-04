@@ -93,11 +93,12 @@ div.invisible{
 }
 
 .switch{
-    position: relative;
-    left: 40%;
+    position: absolute;
+    left: 30em;
     top: 40%;
-    width: 20%;
-    height: 10%;
+    width: 20em;
+    height: 3em;
     background: white;
-    border-radius: 20; 
+    border-radius: 30%;
+    border-
 }
