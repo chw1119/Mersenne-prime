@@ -91,3 +91,13 @@ div.white {
 div.invisible{
     background-color : rgba(255, 255, 255, 0);
 }
+
+.switch{
+    position: relative;
+    left: 40%;
+    top: 40%;
+    width: 20%;
+    height: 10%;
+    background: white;
+    border-radius: 20; 
+}
