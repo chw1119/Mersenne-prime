@@ -42,9 +42,12 @@ app.get('/',function(req,res){
     }
     res.render("mersenne/mersennePage.html")
 });
+const server = http.createServer(app);
 
+const wss = require("./server-side/routers/websocket")(server);
 
-http.createServer(app).listen(8080);
+server.listen(8080)
+
 
 console.log("server open port : 8080")
 

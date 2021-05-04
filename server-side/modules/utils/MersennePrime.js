@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-module.exports = class MersennePrime {
+class MersennePrime {
     static createWorkerId(){
         return Math.random().toString(24).substr(3) + Math.random().toString(24).substr(3);
     }
