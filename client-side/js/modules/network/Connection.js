@@ -1,5 +1,5 @@
 const Connection = (function(){
-    function __cls({url}){
+    function __cls(url){
         this.connection = new WebSocket(url);
     }
 
@@ -17,5 +17,3 @@ const Connection = (function(){
 
     return __cls;
 })()
-
-module.exports = Connection;

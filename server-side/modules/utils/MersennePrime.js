@@ -5,7 +5,7 @@ class MersennePrime {
         return Math.random().toString(24).substr(3) + Math.random().toString(24).substr(3);
     }
     
-    constructor({filePath,interval}){
+    constructor({filePath,interval,ws}){
         this.interval = interval;
         this.filePath = filePath;
 
