@@ -11,7 +11,7 @@ const Connection = (function(){
 
     __cls.prototype.setOnOpen = function(func){
         if(this.connection){
-            this.connection.onopen(func);
+            this.connection.onopen = func;
         }
     }
 

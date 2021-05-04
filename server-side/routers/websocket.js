@@ -4,8 +4,7 @@ module.exports = function(server) {
     const webSocketServer = new webSocket({server : server});
 
     webSocketServer.on ("connection",function(ws,req){
-        ws.send("test");
-        console.log(req);
+        
     })
 
 }
