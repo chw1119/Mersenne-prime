@@ -121,7 +121,7 @@
             targets: '.animated-title',
 
             top: function (el, index) {
-                return 10 + index * 5 + "%";
+                return index == 2 ? 25 + index * 5 + "%" : 10 + index * 5 + "%";
             },
 
             opacity: 1,
@@ -142,6 +142,5 @@
 
     }
 
-
-
 }()
+
