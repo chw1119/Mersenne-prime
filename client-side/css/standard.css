@@ -92,35 +92,30 @@ div.invisible{
     background-color : rgba(255, 255, 255, 0);
 }
 
-
-
-#switch{
+div#button-slide {
     position: relative;
-    top: 20%;
-    left: 35%;
     height: 4%;
     width: 30%;
-    border: solid;
-    border-width: 4px; 
-    border-color: white;
-    background: transparent;
+    top: 20%;
+    left: 35%;
+    opacity: 0;
+    background-color: gainsboro;
+    border: solid white;
+
     cursor: pointer;
 }
 
-.button{
-  position: relative;
-  height: 100%;
-  width: 20%;
-  background: white;
-  transition:all .4s ease;
-}
-    
-input[id="switchCheckbox"]{
-    display: none;
-} 
+div#slide {
 
-input:checked+.button{
-  transform: translateX(65px);
-  transform: translateX(65px);
-  transform: translateX(65px);
-}
+
+    position: relative;
+    font-size: 0.3em;
+    color : black;
+    font-family: 'Oswald', sans-serif;
+    vertical-align: middle;
+    margin-left: 0px;
+    background-color: white;
+
+    width  : 20%;
+    height : 100%;
+} 

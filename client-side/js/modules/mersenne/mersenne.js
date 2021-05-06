@@ -10,6 +10,12 @@
 
     const sections = document.querySelectorAll(".section");
 
+    const slider = document.getElementById("slide");
+    const buttonSlide = document.getElementById("button-slide");
+
+
+    let isClicked = false;
+
     //const animationEventManager = new AnimationEventHandler(ctx);
 
     window.onload = () => {
@@ -136,11 +142,41 @@
 
         });
 
+        buttonSlide.onclick = function(e){
+            isClicked = !isClicked;
+
+            if(isClicked){
+                anime({
+                    targets : slider,
+                    duration : 800,
+                    easing: 'easeInOutExpo',
+                    "left" : "80%",
+                    
+                });
+
+                buttonSlide.style.backgroundColor = "skyblue";
+                slider.innerText = "ON";
+            }
+            else{
+                
+                anime({
+                    targets : slider,
+                    duration : 800,
+                    easing: 'easeInOutExpo',
+                    "left" : "0%"
+                });
+                
+                buttonSlide.style.backgroundColor = ""
+                slider.innerText = "OFF";
+            }
+        }
+
+
+    
 
         const con = new Connection("wss://" + document.domain + ":443");
 
 
     }
-
 }()
 
