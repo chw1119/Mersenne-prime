@@ -1,6 +1,6 @@
 const PrimeResult = (function(){
-    function __cls{
-
+    function __cls(){
+        
     }
 
     return __cls;
